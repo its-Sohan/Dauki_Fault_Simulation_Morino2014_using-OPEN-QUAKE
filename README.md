@@ -1,0 +1,1 @@
+# Dauki_Fault_Simulation_Morino2014_using-OPEN-QUAKE
