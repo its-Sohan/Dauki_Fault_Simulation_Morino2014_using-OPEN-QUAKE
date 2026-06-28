@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns="http://openquake.org/xmlns/nrml/0.4">
+  <exposureModel id="bgd_exposure" category="buildings"
+    description="Bangladesh simplified exposure - Dhaka, Sylhet, Chittagong region">
+    <conversions>
+      <area type="per_asset" unit="SQM"/>
+      <costTypes>
+        <costType name="structural" type="per_asset" unit="USD"/>
+        <costType name="contents" type="per_asset" unit="USD"/>
+      </costTypes>
+    </conversions>
+    <assets>
+      <asset id="dhaka_1" number="1" area="100" taxonomy="RC/LFM+DNO/H:1" lon="90.41" lat="23.81">
+        <costs>
+          <cost type="structural" value="50000"/>
+          <cost type="contents" value="20000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="5" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="dhaka_2" number="1" area="80" taxonomy="W/LWAL+DNO/H:1" lon="90.42" lat="23.82">
+        <costs>
+          <cost type="structural" value="15000"/>
+          <cost type="contents" value="5000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="4" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="sylhet_1" number="1" area="120" taxonomy="RC/LFM+DNO/H:2" lon="91.87" lat="24.90">
+        <costs>
+          <cost type="structural" value="60000"/>
+          <cost type="contents" value="25000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="6" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="sylhet_2" number="1" area="90" taxonomy="W/LWAL+DNO/H:1" lon="91.88" lat="24.91">
+        <costs>
+          <cost type="structural" value="18000"/>
+          <cost type="contents" value="6000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="5" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="chittagong_1" number="1" area="150" taxonomy="RC/LFM+DNO/H:3" lon="91.83" lat="22.33">
+        <costs>
+          <cost type="structural" value="80000"/>
+          <cost type="contents" value="30000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="8" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="mymensingh_1" number="1" area="100" taxonomy="W/LWAL+DNO/H:1" lon="90.40" lat="24.75">
+        <costs>
+          <cost type="structural" value="12000"/>
+          <cost type="contents" value="4000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="4" period="day"/>
+        </occupancies>
+      </asset>
+      <asset id="jaflong_1" number="1" area="80" taxonomy="W/LWAL+DNO/H:1" lon="92.12" lat="25.10">
+        <costs>
+          <cost type="structural" value="10000"/>
+          <cost type="contents" value="3000"/>
+        </costs>
+        <occupancies>
+          <occupancy occupants="3" period="day"/>
+        </occupancies>
+      </asset>
+    </assets>
+  </exposureModel>
+</nrml>

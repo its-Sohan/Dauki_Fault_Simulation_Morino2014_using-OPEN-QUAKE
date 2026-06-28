@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nrml xmlns:gml="http://www.opengis.net/gml"
+      xmlns="http://openquake.org/xmlns/nrml/0.4">
+
+<sourceModel name="Dauki Fault System - Point Source Approximation">
+
+  <!-- FULL DAUKI FAULT - point source at centroid -->
+  <pointSource id="dauki_full_pt" name="Dauki Fault Full (Mw~8.0)"
+               tectonicRegion="Active Shallow Crust">
+    <pointGeometry>
+      <gml:Point>
+        <gml:pos>91.25 25.17</gml:pos>
+      </gml:Point>
+      <upperSeismoDepth>0</upperSeismoDepth>
+      <lowerSeismoDepth>25</lowerSeismoDepth>
+    </pointGeometry>
+    <magScaleRel>WC1994</magScaleRel>
+    <ruptAspectRatio>2.0</ruptAspectRatio>
+    <incrementalMFD minMag="7.7" binWidth="0.1">
+      <occurRates>0.0003 0.0007 0.0007 0.0003</occurRates>
+    </incrementalMFD>
+    <nodalPlaneDist>
+      <nodalPlane probability="1.0" strike="90.0" dip="45.0" rake="90.0"/>
+    </nodalPlaneDist>
+    <hypoDepthDist>
+      <hypoDepth probability="1.0" depth="12.5"/>
+    </hypoDepthDist>
+  </pointSource>
+
+  <!-- CENTRAL SEGMENT - point source at centroid -->
+  <pointSource id="dauki_central_pt" name="Dauki Central Segment (Mw~7.6)"
+               tectonicRegion="Active Shallow Crust">
+    <pointGeometry>
+      <gml:Point>
+        <gml:pos>91.40 25.16</gml:pos>
+      </gml:Point>
+      <upperSeismoDepth>0</upperSeismoDepth>
+      <lowerSeismoDepth>25</lowerSeismoDepth>
+    </pointGeometry>
+    <magScaleRel>WC1994</magScaleRel>
+    <ruptAspectRatio>2.0</ruptAspectRatio>
+    <incrementalMFD minMag="7.4" binWidth="0.1">
+      <occurRates>0.0003 0.0007 0.0007 0.0003</occurRates>
+    </incrementalMFD>
+    <nodalPlaneDist>
+      <nodalPlane probability="1.0" strike="90.0" dip="45.0" rake="90.0"/>
+    </nodalPlaneDist>
+    <hypoDepthDist>
+      <hypoDepth probability="1.0" depth="12.5"/>
+    </hypoDepthDist>
+  </pointSource>
+
+  <!-- EASTERN SEGMENT / JAFLONG - point source at centroid -->
+  <pointSource id="jaflong_east_pt" name="Jaflong Eastern Segment (Mw~7.5)"
+               tectonicRegion="Active Shallow Crust">
+    <pointGeometry>
+      <gml:Point>
+        <gml:pos>91.95 25.02</gml:pos>
+      </gml:Point>
+      <upperSeismoDepth>0</upperSeismoDepth>
+      <lowerSeismoDepth>25</lowerSeismoDepth>
+    </pointGeometry>
+    <magScaleRel>WC1994</magScaleRel>
+    <ruptAspectRatio>2.0</ruptAspectRatio>
+    <incrementalMFD minMag="7.3" binWidth="0.1">
+      <occurRates>0.0001 0.0002 0.0004 0.0002 0.0001</occurRates>
+    </incrementalMFD>
+    <nodalPlaneDist>
+      <nodalPlane probability="1.0" strike="90.0" dip="45.0" rake="90.0"/>
+    </nodalPlaneDist>
+    <hypoDepthDist>
+      <hypoDepth probability="1.0" depth="12.5"/>
+    </hypoDepthDist>
+  </pointSource>
+
+  <!-- WESTERN SEGMENT - point source at centroid -->
+  <pointSource id="dauki_west_pt" name="Dauki Western Segment (Mw~7.5)"
+               tectonicRegion="Active Shallow Crust">
+    <pointGeometry>
+      <gml:Point>
+        <gml:pos>90.45 25.27</gml:pos>
+      </gml:Point>
+      <upperSeismoDepth>0</upperSeismoDepth>
+      <lowerSeismoDepth>25</lowerSeismoDepth>
+    </pointGeometry>
+    <magScaleRel>WC1994</magScaleRel>
+    <ruptAspectRatio>2.0</ruptAspectRatio>
+    <incrementalMFD minMag="7.3" binWidth="0.1">
+      <occurRates>0.0002 0.0003 0.0003 0.0002</occurRates>
+    </incrementalMFD>
+    <nodalPlaneDist>
+      <nodalPlane probability="1.0" strike="90.0" dip="45.0" rake="90.0"/>
+    </nodalPlaneDist>
+    <hypoDepthDist>
+      <hypoDepth probability="1.0" depth="12.5"/>
+    </hypoDepthDist>
+  </pointSource>
+
+</sourceModel>
+</nrml>
